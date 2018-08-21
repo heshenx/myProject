@@ -1,0 +1,67 @@
+{
+  "groups": [
+    {
+      "name": "shidaiyintong",
+      "type": "com.shidaiyintong.cn.common.SystemFlagConfig",
+      "sourceType": "com.shidaiyintong.cn.common.SystemFlagConfig"
+    }
+  ],
+  "properties": [
+    {
+      "name": "shidaiyintong.cardtype",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.shidaiyintong.cn.common.SystemFlagConfig"
+    },
+    {
+      "name": "shidaiyintong.certtype",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.shidaiyintong.cn.common.SystemFlagConfig"
+    },
+    {
+      "name": "shidaiyintong.issuekind",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.shidaiyintong.cn.common.SystemFlagConfig"
+    },
+    {
+      "name": "shidaiyintong.issuetype",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.shidaiyintong.cn.common.SystemFlagConfig"
+    },
+    {
+      "name": "shidaiyintong.limitunit",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.shidaiyintong.cn.common.SystemFlagConfig"
+    },
+    {
+      "name": "shidaiyintong.ordtype",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.shidaiyintong.cn.common.SystemFlagConfig"
+    },
+    {
+      "name": "shidaiyintong.periodtype",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.shidaiyintong.cn.common.SystemFlagConfig"
+    },
+    {
+      "name": "shidaiyintong.signway",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.shidaiyintong.cn.common.SystemFlagConfig"
+    },
+    {
+      "name": "shidaiyintong.status",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.shidaiyintong.cn.common.SystemFlagConfig"
+    },
+    {
+      "name": "shidaiyintong.systemflag",
+      "type": "java.util.List<java.lang.String>",
+      "sourceType": "com.shidaiyintong.cn.common.SystemFlagConfig"
+    },
+    {
+      "name": "shidaiyintong.tradetype",
+      "type": "java.util.Map<java.lang.String,java.lang.String>",
+      "sourceType": "com.shidaiyintong.cn.common.SystemFlagConfig"
+    }
+  ],
+  "hints": []
+}

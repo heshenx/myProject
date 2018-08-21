@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8"/>
+    <title>时代银通接口测试</title>
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.easyui.min.js"></script>
+    <script type="text/javascript" src="../static/js/index.js"></script>
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+</head>
+<body>
+<div class="setBack" style="height: 50px;width: 1000px"></div>
+<div style="height: 100px;width: 1000px" style="display:none" id="projectDiv">
+    <input type="hidden" name="flag" id="flag">
+    <span id="projectName" name="projectName"><b>项目名称：</b></span>&nbsp;&nbsp;&nbsp;
+    <span id="projectInterface" name="projectInterface"><b>接口名称：</b></span>&nbsp;&nbsp;&nbsp;
+    <span id="interfaceCode" name="interfaceCode"><b>接口号：</b></span>
+    <hr style="width: 100%"/>
+</div>
+<div>
+    <span style="font-size:22px"><b>请输入接口号：</b></span>
+    <input type="text" name="interfaceName" id="interfaceName"/>
+    <span style="font-size:22px"><b>请选择接口标识：</b></span>
+    <select name="systemFlag" id="systemFlag" style="width: 100px"></select>
+    <input type="button" value="提交" onclick="interfaceSubmit()"/>
+</div>
+<div id="headDiv" style="display:none" align="left">
+    <h2>报文头信息</h2>
+    <input type="hidden" name="headLength" id="headLength"/>
+    <form id="headSubmitForm">
+        <table border="0" style="text-align: left;" width="800px" id="headTable" border="1" cellspacing="0">
+            <tr>
+                <td width="80px;">参数名</td>
+                <td width="80px;">参数长度</td>
+                <td width="80px;">操作</td>
+            </tr>
+        </table>
+    </form>
+    <input type="button" value="提交报文头" onclick="saveHeadMessage()" align="center">
+</div>
+
+<div id="bodyDiv" style="display:none" align="left">
+    <h2>报文体信息</h2>
+    <input type="hidden" name="bodyLength" id="bodyLength"/>
+    <form id="bodySubmitForm">
+        <table border="0" style="text-align: left;" width="800px" id="bodyTable" border="1" cellspacing="0">
+            <tr>
+                <td width="80px;">参数名</td>
+                <td width="80px;">参数长度</td>
+                <td width="80px;">操作</td>
+            </tr>
+        </table>
+    </form>
+    <input type="button" value="提交报文体" onclick="saveBodyMessage()" align="center">
+</div>
+
+<div id="callbackDiv" style="display:none">
+    <h1>回复包信息</h1>
+    <form id="callbackSubmitForm">
+        <table border="0" style="text-align: left;" width="800px" id="callbackTable">
+            <tr>
+                <td width="80px;">参数名</td>
+                <td width="80px;">参数长度</td>
+                <td width="80px;">操作</td>
+            </tr>
+        </table>
+    </form>
+</div>
+</body>
+</html>

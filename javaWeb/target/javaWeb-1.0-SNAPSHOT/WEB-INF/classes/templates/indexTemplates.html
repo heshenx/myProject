@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>时代银通接口测试</title>
+    <script type="text/javascript" src="../static/js/indexTemplates.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.min.js"></script>
+    <script type="text/javascript" src="../static/js/jquery.easyui.min.js"></script>
+    <link type="text/css" title="style1" rel="stylesheet" href="../static/css/style.css"/>
+    <link type="text/css" title="style2" rel="alternate stylesheet" href="../static/css/style2.css"/>
+    <link type="text/css" title="style3" rel="alternate stylesheet" href="../static/css/style3.css"/>
+    <link rel="stylesheet" type="text/css" href="../static/css/index.css">
+</head>
+<body>
+<div class="setBack" style="height: 50px;width: 100%">
+    <div align="right" style="margin-top:0px;">
+        <div class="style_changer_text">主题背景:</div>
+        <input type="submit" class="submit" value="主题一" onclick="setActiveStyleSheet('style1');"/>
+        <input type="submit" class="reset" value="主题二" onclick="setActiveStyleSheet('style2');"/>
+        <input type="submit" class="submit" value="主题三" onclick="setActiveStyleSheet('style3');"/>
+    </div>
+</div>
+<div style="height: 100px;width: 1000px" style="display:none" id="projectDiv">
+</div>
+<div style="height: 100px;width: 1000px" style="display:none" id="errorDiv">
+    <input type="hidden" name="errorflag" id="errorflag">
+    <span id="errorName" name="errorName" style="color: red"><b>错误信息：</b></span>
+    <hr style="width: 100%"/>
+</div>
+<div align="left" style="width: 100%">
+    <legend>接口信息</legend>
+    <div class="form-row">
+        <div class="field-label"><label for="interfaceName">接口号</label>:</div>
+        <div class="field-widget"><input name="interfaceName" id="interfaceName" class="required"
+                                         title="Enter your name"/></div>
+    </div>
+    <div class="form-row">
+        <div class="field-label"><label for="systemFlag">项目标识</label>:</div>
+        <div class="field-widget"><select id="systemFlag" name="systemFlag" class="validate-selection"
+                                          title="Choose your department"></select></div>
+    </div>
+    <div class="form-row">
+        <input type="submit" class="submit" value="Submit" id="Submit" onclick="interfaceFormSubmit()"/>
+        <input class="reset" type="button" value="Reset" onclick="reset()"/>
+    </div>
+</div>
+<div style="height: 100px;width: 1000px" style="display:none" id="hrDiv">
+    <hr style="width: 100%"/>
+</div>
+
+<div id="main" class="main" style="display:none">
+    <div id="head" class="head" style="display:none;float: left">
+        <h1>请求头信息：</h1>
+        <input type="hidden" name="headLength" id="headLength"/>
+        <form id="headSubmitForm" method="post">
+        </form>
+    </div>
+
+    <div id="body" class="body" style="display:none; float: left">
+        <h1>请求体信息：</h1>
+        <input type="hidden" name="bodyLength" id="bodyLength"/>
+        <input type="hidden" name="ipAddressPort" id="ipAddressPort"/>
+        <form id="bodySubmitForm" method="post">
+        </form>
+        <input type="submit" class="submit" value="Submit" id="bodySubmit" onclick="submit()"/>
+        <input class="reset" type="button" value="Reset" onclick="bodyReset()"/>
+    </div>
+    <div id="right" class="right" style="display:none;float: left">
+        <h1>回复包信息：</h1>
+        <form id="callSubmitForm" method="post">
+        </form>
+    </div>
+</div>
+</body>
+</html>

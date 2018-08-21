@@ -1,0 +1,23 @@
+.setBack {
+    background: url(../image/shidaiyintong.png) no-repeat;
+}
+
+.main {
+    width: 100%;
+    height: 1600px;
+}
+
+.head {
+    width: 33%;
+    height: 100%;
+}
+
+.body {
+    width: 33%;
+    height: 100%;
+}
+
+.right {
+    width: 33%;
+    height: 100%;
+}
